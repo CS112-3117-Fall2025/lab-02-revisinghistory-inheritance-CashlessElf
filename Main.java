@@ -25,5 +25,28 @@ public class Main {
 		System.out.println("REVISED HISTORICAL EVENT EXAMPLE:");
 		System.out.println("====================================================");
 		tulsaMassacre.teach();
+
+		String castlleItterDescription = "The Battle of Castle Itter is often sensationalized, with a common misconception being that it was a simple, unified effort between American and French forces against the Nazis. Some accounts mistakenly portray it as a straightforward battle where everyone was on the same side from the beginning. Another frequent misunderstanding is that it was a major, decisive turning point in the war, when in reality, it was a smaller, unique engagement that took place just a few days before the end of the war in Europe. These inaccuracies can often oversimplify the complex and chaotic nature of the final days of World War II.";
+
+		Date castleItterDay = new Date(5, 5, 1945);
+
+		HistoricalEvent castleItter = new HistoricalEvent(castlleItterDescription, castleItterDay);
+
+		System.out.println("====================================================");
+		System.out.println("Personal Historical Event:");
+		System.out.println("====================================================");
+		System.out.println(castleItter);
+
+		String castleItterRevised = "The Battle of Castle Itter, which took place on May 5, 1945, was a unique and chaotic event involving an unlikely alliance of American soldiers from the 23rd Tank Battalion, a German Wehrmacht officer, and various anti-Nazi resistance fighters, including some French prisoners. This diverse group defended the castle, which was holding high-profile French prisoners, against an attacking force of the 17th SS Panzergrenadier Division. The defenders initially had to fight together out of necessity, with the American and German forces, along with the French resistance, cooperating to repel the SS. The battle, though small in scale, highlights the unusual and sometimes contradictory alliances that formed in the final moments of the war.";
+
+		String castleItterCitation = "https://www.bing.com/ck/a?!&&p=9cd3b114e5042b58a57c07789b476a0bde50dbaec4e92218efa55c523ca20b8bJmltdHM9MTc1NzM3NjAwMA&ptn=3&ver=2&hsh=4&fclid=15031f85-4907-6c35-3317-0a2d48956d0d&psq=The+National+WWII+Museum+castle+itter&u=a1aHR0cHM6Ly9leHBsb3JldGhlYXJjaGl2ZS5jb20vYmF0dGxlLWNhc3RsZS1pdHRlcg&ntb=1";
+
+		RevisedHistoricalEvent battleCastleItter = new RevisedHistoricalEvent(castlleItterDescription, castleItterDay, castleItterRevised, castleItterCitation);
+
+		System.out.println("\n====================================================");
+		System.out.println("Personal Revised Historical Event:");
+		System.out.println("====================================================");
+		battleCastleItter.teach();
+
 	}
 }
